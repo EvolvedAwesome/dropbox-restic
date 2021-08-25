@@ -1,0 +1,8 @@
+# Exclude Downloads directory in home folder
+Downloads
+
+# Cache files. These are useful for resuming state but if we are restoring the system not so useful
+Library/Caches
+
+# DS store files
+.DS_Store
