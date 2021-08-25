@@ -78,7 +78,7 @@ sudo rclone mount dropbox:/ /Volumes/Dropbox --no-modtime --no-checksum --volnam
 
 Note the use of "--volname" which will generate a volume just like a regular network share. You can use a local directory for the mount location instead of `/Volumes/Dropbox`, however this can get in the way and cause errors when you are trying to replicate a directory (and thus, replicate something into itself), so I reccomend mounting it in a system directory.
 
-3. Setup restic within the new 
+3. Setup restic within the dropbox filesystem
 
 The format for using the rclone backend within restic is `rclone:{bookmark}:{folder}`. For this example we will create a new restic backup location in `rclone:dropbox:backup`:
 
